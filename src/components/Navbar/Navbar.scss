@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 1em;
+  padding: 2em 0;
+
+  & .logo {
+    margin-right: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    font-weight: bold;
+    // font-style: italic;
+  }
+
+  & .search-btn {
+    position: relative;
+
+    & > input {
+      height: 100%;
+      width: 100%;
+      padding: 0.45em 0.5em;
+      border: 1px solid #BBB;
+      outline: none;
+      border-radius: 6px;
+    }
+
+    & > svg {
+      position: absolute;
+      right: 5%;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+    }
+  }
+
+  & .cart-btn {
+    padding: 0.65em 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    position: relative;
+    background: #DDD;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+
+    &:hover {
+      background: #EEE;
+    }
+
+    & > svg {
+      height: 18px;
+      width: 18px;
+    }
+
+    & > span {
+      position: absolute;
+      top: -30%;
+      right: -20%;
+      background: rgb(240, 59, 35);
+      height: 25px;
+      width: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: #FFF;
+    }
+  }
+}

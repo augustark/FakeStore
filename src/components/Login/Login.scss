@@ -1,0 +1,49 @@
+.login-page {
+  width: 80%;
+  margin: auto;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  & > h1 {
+    margin: 0;
+  }
+
+  & > form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+
+    & > label {
+      text-align: left;
+      margin-bottom: 0.25rem;
+      font-size: 0.8rem;
+    }
+    
+    & > input {
+      padding: 0.75em 0.5rem;
+      margin-bottom: 0.8rem;
+      border: 1px solid #999;
+      outline: none;
+
+      &:active,
+      &:focus-within {
+        border: 1px solid #000;
+      }
+    }
+
+    & > button {
+      padding: 0.75em;
+      background: #EEE;
+      border: none;
+      border-radius: 3px;
+
+      &:active,
+      &:focus-within {
+        background: #DDD;
+      }
+    }
+  }
+}
